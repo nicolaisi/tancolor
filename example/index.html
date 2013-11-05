@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Demo | imageshack.js</title>
+  <meta name="description"
+    content="Demo | imageshack.js">
+  <link href="style.css" rel="stylesheet">
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+ 
+<body>
+
+<div id="container">
+  <img id="grayscale" src="images/obama.jpg" alt="I am Obama">
+  <img id="red" src="images/obama.jpg" alt="I am Obama">
+  <img id="green" src="images/obama.jpg" alt="I am Obama">
+  <img id="blue" src="images/obama.jpg" alt="I am Obama">
+</div>
+ 
+<!-- java script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.tancolor.min.js"></script>
+<script>
+  $("#grayscale").tancolor();
+  $("#red").tancolor({mode: 'red'});
+  $("#green").tancolor({mode: 'green'});
+  $("#blue").tancolor({mode: 'blue'});
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Tancolor",
+  "version": "0.0.1",
+  "main": "./jquery/jquery.tancolor.js",
+  "dependencies": {
+  }
+}
