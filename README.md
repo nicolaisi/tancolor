@@ -53,7 +53,7 @@ Red
 Green
 -----
 
-$("#myImageID").tancolor({
+    $("#myImageID").tancolor({
         mode: "green"
     });
     
@@ -62,11 +62,24 @@ $("#myImageID").tancolor({
 Blue
 ----
 
-$("#myImageID").tancolor({
+    $("#myImageID").tancolor({
         mode: "blue"
     });
     
 ![I am Obama](example/images/obama.jpg "Before")![I am Obama](example/images/blue.png "After")
+
+Of course you can change every specific parameter to suit your need, there are many grayscale parameters that suits a different application. If the default mode does not suit your need. Feel free to put in your own parameter
+
+    $("#myImageID").tancolor({
+        r_weight: 0.34,
+        g_weight: 0.5,
+        b_weight: 0.16,
+        r_intensity: 1,
+        g_intensity: 1,
+        b_intensity: 1
+    });
+    
+The `*_weight` parameter tune the brightness of the color element. The `*_intensity` parameter determines the color of the image.
 
 Motivation
 ==========
