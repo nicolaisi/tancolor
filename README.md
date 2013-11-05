@@ -41,11 +41,32 @@ This results in:
 
 It also offers red, green and blue filter.
 
+Red
+---
+
     $("#myImageID").tancolor({
         mode: "red"
     });
     
 ![I am Obama](example/images/obama.jpg "Before")![I am Obama](example/images/red.png "After")
+
+Green
+-----
+
+$("#myImageID").tancolor({
+        mode: "green"
+    });
+    
+![I am Obama](example/images/obama.jpg "Before")![I am Obama](example/images/green.png "After")
+
+Blue
+----
+
+$("#myImageID").tancolor({
+        mode: "blue"
+    });
+    
+![I am Obama](example/images/obama.jpg "Before")![I am Obama](example/images/blue.png "After")
 
 Motivation
 ==========
