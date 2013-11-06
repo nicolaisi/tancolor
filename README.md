@@ -8,7 +8,8 @@ come.
 Example
 =======
 
-The example is provided in the example folder.
+The example is provided in the example folder. An interactive [demo](http://nicolaisi.github.io/tancolor/) is
+also available.
 
 Dependencies
 ============
