@@ -16,7 +16,8 @@
         var r_intensity;
         var g_intensity;
         var b_intensity;
-
+        
+        // settings value
         switch(settings.mode){
             case 'grayscale':
                 r_weight = 0.34;
@@ -59,17 +60,15 @@
                 b_intensity = settings.b_intensity;
                 break;
         }
-        
-        canvas = document.createElement("canvas");
-        canvas.width = $(this).width();
-        canvas.height = $(this).height();
+
+        // convert image to canvas
         var img = document.getElementById($(this).attr("id"));
-        canvas.getContext("2d").drawImage(img, 0, 0);
-        var context = canvas.getContext('2d');
-        context.drawImage(img, 0 , 0);
+        var canvas = convertImageToCanvas(img);
+        var ctx = canvas.getContext("2d");
+        var imageData = ctx.getImageData(0, 0, img.width, img.height)
         $(this).replaceWith(canvas);
 
-        var imageData = context.getImageData(0, 0, img.width, img.height);
+        // Processing image data
         var data = imageData.data;
         for(var i = 0; i < data.length; i += 4) {
             var brightness = r_weight * data[i] + g_weight * data[i + 1] + b_weight * data[i + 2];
@@ -80,6 +79,33 @@
             // blue
             data[i + 2] = b_intensity * brightness;
         }
-        context.putImageData(imageData, 0, 0);
+        ctx.putImageData(imageData, 0, 0);
+
+        $('#'+$(this).attr("id")).each(function(i,e){ 
+             var img = e.toDataURL("image/png"); 
+             $(e).replaceWith( $('<img src="' + img + '"/>').attr({width: $(e).attr("width"), height: $(e).attr("height"), style: $(e).attr("style") }) ) });
+
+        // Converts image to canvas; returns new canvas element
+        function convertImageToCanvas(image) {
+	    var canvas = document.createElement("canvas");
+	    canvas.width = image.width;
+	    canvas.height = image.height;
+            if(image.id) {
+                canvas.id = image.id;
+            }
+            if(image.className) {
+                canvas.className = image.className;
+            }
+	    canvas.getContext("2d").drawImage(image, 0, 0);
+
+	    return canvas;
+        }
+
+        // Converts canvas to an image
+        function convertCanvasToImage(canvas) {
+	    var image = new Image();
+	    image.src = canvas.toDataURL("image/png");
+	    return image;
+        }
     };
 }(jQuery));
