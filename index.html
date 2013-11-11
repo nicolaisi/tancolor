@@ -30,7 +30,7 @@
         <div class="login">
         <div class="login-screen">
           <div class="login-icon">
-            <img id="myImage" src="images/obama.jpg" alt="I am Obama">
+            <img id="myImage" src="images/obama.jpg" alt="I am Obama" style="display:none">
           </div>
 
           <div class="login-form">
@@ -181,7 +181,13 @@
     });
 
     function update_filter() {
-    
+        console.log(parseFloat($("#r_weight_text").val()));
+        console.log(parseFloat($("#g_weight_text").val()));
+        console.log(parseFloat($("#b_weight_text").val()));
+        console.log(parseInt($("#r_intensity_text").val()));
+        console.log(parseInt($("#g_intensity_text").val()));
+        console.log(parseInt($("#b_intensity_text").val()));
+
         $("#myImage").tancolor({
             r_weight: parseFloat($("#r_weight_text").val()),
             g_weight: parseFloat($("#g_weight_text").val()),
@@ -191,7 +197,9 @@
             b_intensity: parseInt($("#b_intensity_text").val())
         });
     }
-   
+    $(document).ready(function(){  
+        $("#myImage").attr('src',$(this).src + '?' + (new Date()).getTime());  
+    });  
     </script>
   </body>
 </html>
