@@ -30,7 +30,7 @@
         <div class="login">
         <div class="login-screen">
           <div class="login-icon">
-            <img id="myImage" src="images/obama.jpg" alt="I am Obama" style="display:none">
+            <img id="myImage" src="images/obama.jpg" alt="I am Obama">
           </div>
 
           <div class="login-form">
@@ -41,9 +41,9 @@
                   <label for="rweight">r_weight</label>
                 </div>
                 <div class="col-xs-3">
-                  <input id="r_weight_text" type="text" class="form-control">
+                  <input id="r_weight_text" type="text" class="form-control" value="0.34">
                 </div>
-                <input type="range" name="points" min="1" max="1000" id="r_weight">
+                <input type="range" name="points" min="1" max="1000" id="r_weight" value="340">
               </div>
             </div>
             
@@ -53,9 +53,9 @@
                   <label for="gweight">g_weight</label>
                 </div>
                 <div class="col-xs-3">
-                  <input id="g_weight_text" type="text" class="form-control">
+                  <input id="g_weight_text" type="text" class="form-control" value="0.5">
                 </div>
-                <input type="range" name="points" min="1" max="1000" id="g_weight">
+                <input type="range" name="points" min="1" max="1000" id="g_weight" value="500">
               </div>
             </div>
             
@@ -65,9 +65,9 @@
                   <label for="bweight">b_weight</label>
                 </div>
                 <div class="col-xs-3">
-                  <input id="b_weight_text" type="text" class="form-control">
+                  <input id="b_weight_text" type="text" class="form-control" value="0.16">
                 </div>
-                <input type="range" name="points" min="1" max="1000" id="b_weight">
+                <input type="range" name="points" min="1" max="1000" id="b_weight" value="160">
               </div>
             </div>
             
@@ -77,9 +77,9 @@
                   <label for="rintensity">r_intensity</label>
                 </div>
                 <div class="col-xs-3">
-                  <input id="r_intensity_text" type="text" class="form-control">
+                  <input id="r_intensity_text" type="text" class="form-control" value="1">
                 </div>
-                <input type="range" name="points" min="1" max="1000" id="r_intensity">
+                <input type="range" name="points" min="1" max="1000" id="r_intensity" value="4">
               </div>
             </div>
             
@@ -89,9 +89,9 @@
                   <label for="g_intensity">g_intensity</label>
                 </div>
                 <div class="col-xs-3">
-                  <input id="g_intensity_text" type="text" class="form-control">
+                  <input id="g_intensity_text" type="text" class="form-control" value="1">
                 </div>
-                <input type="range" name="points" min="1" max="1000" id="g_intensity">
+                <input type="range" name="points" min="1" max="1000" id="g_intensity" value="4">
               </div>
             </div>
             
@@ -101,9 +101,9 @@
                   <label for="bintensity">b_intensity</label>
                 </div>
                 <div class="col-xs-3">
-                  <input id="b_intensity_text" type="text" class="form-control">
+                  <input id="b_intensity_text" type="text" class="form-control" value="1">
                 </div>
-                <input type="range" name="points" min="1" max="1000" id="b_intensity">
+                <input type="range" name="points" min="1" max="1000" id="b_intensity" value="4">
               </div>
             </div>
 
@@ -198,7 +198,7 @@
         });
     }
     $(document).ready(function(){  
-        $("#myImage").attr('src',$(this).src + '?' + (new Date()).getTime());  
+        $("#myImage").tancolor({}); 
     });  
     </script>
   </body>
