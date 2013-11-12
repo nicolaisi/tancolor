@@ -5,6 +5,11 @@ A jQuery plugin that processes image using filter algorithm. It currently
 processes image into grayscale, bluescale, greenscale, redscale and more to 
 come.
 
+Tancolor does not limit it's user to the standard feature, it offers flexibilty
+to create our own set of color, let it be "red orange", "purple blue", "cyan"
+and so on. Just let your imagination runs wild. The [demo](http://nicolaisi.github.io/tancolor/)
+ page shows examples on these. 
+
 Example
 =======
 
@@ -15,6 +20,7 @@ Dependencies
 ============
 
 *  [jQuery](https://github.com/jquery/jquery)
+*  [Canvas](http://caniuse.com/canvas)
 
 Install
 =======
