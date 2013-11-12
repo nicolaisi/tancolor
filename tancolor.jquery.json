@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "homepage": "http://nicolaisi.github.io/tancolor/",
   "author": {
-    "name": "Nicholas Tan Jerome"
+    "name": "Nicholas Tan Jerome",
+    "email": "nicholastanjerome@gmail.com",
+    "url": "http://ntanjerome.org/"
   },
   "repository": {
     "type": "git",
