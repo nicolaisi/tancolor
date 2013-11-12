@@ -15,6 +15,8 @@
 
     <link rel="shortcut icon" href="images/favicon.png">
 
+    <link href="css/prism.css" rel="stylesheet" />
+    
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -112,9 +114,199 @@
           </div>
         </div>
       </div>
+      <p>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="nicolaisi" data-size="large">Tweet</a>
+      <iframe src="http://ghbtns.com/github-btn.html?user=nicolaisi&repo=tancolor
+&type=watch&count=true" height="20" width="107" frameborder="0" scrolling="0" style="width:205px; height: 20px;" allowTransparency="true"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=nicolaisi&repo=tancolor&type=fork&count=true" height="20" width="107" frameborder="0" scrolling="0" style="width:105px; height: 20px;" allowTransparency="true"></iframe>
+              <iframe src="http://ghbtns.com/github-btn.html?user=nicolaisi&type=follow&count=true" height="20" width="195" frameborder="0" scrolling="0" style="width:195px; height: 20px;" allowTransparency="true"></iframe>
+      </p>
       </div> <!-- /demo-headline -->
+      
+      <h3 class="tile-title">Default modes</h3>
+      
+      <div class="row demo-tiles"><br>
+        <div class="col-md-3">
+          <div class="tile">
+            <img id="grayscale" src="images/obama.jpg" alt="I am Obama">
+            <p>
+            <pre><code class="language-javascript">$("#myImage").tancolor();</code></pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img id="red" src="images/obama.jpg" alt="I am Obama">
+            <p>
+            <pre><code class="language-javascript">$("#myImage").tancolor({mode: "red"});</code></pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img id="green" src="images/obama.jpg" alt="I am Obama">
+            <p>
+            <pre><code class="language-javascript">$("#myImage").tancolor({mode: "green"});</code></pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img id="blue" src="images/obama.jpg" alt="I am Obama">
+            <p>
+            <pre><code class="language-javascript">$("#myImage").tancolor({mode: "blue"});</code></pre>
+            </p>
+          </div>
+        </div>
+      </div> <!-- /tiles -->
+      
+      <h3 class="tile-title">Custom</h3>
+      
+      <pre><code class="language-javascript">$("#myImageID").tancolor({
+    r_weight: 0.34,
+    g_weight: 0.5,
+    b_weight: 0.16,
+    r_intensity: 1,
+    g_intensity: 1,
+    b_intensity: 1
+});</code></pre>
+      
+      <div class="row demo-tiles"><br>
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/download.png" alt="Compas">
+            <table class="table">
+              <tr>
+                <td>r_weight</td>
+                <td>0.395</td>
+              <tr>
+              <tr>
+                <td>g_weight</td>
+                <td>0.179</td>
+              <tr>
+              <tr>
+                <td>b_weight</td>
+                <td>0.069</td>
+              <tr>
+              <tr>
+                <td>r_intensity</td>
+                <td>1</td>
+              <tr>
+              <tr>
+                <td>g_intensity</td>
+                <td>2</td>
+              <tr>
+              <tr>
+                <td>b_intensity</td>
+                <td>78</td>
+              <tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/download2.png" alt="Compas">
+            <table class="table">
+              <tr>
+                <td>r_weight</td>
+                <td>0.285</td>
+              <tr>
+              <tr>
+                <td>g_weight</td>
+                <td>0.306</td>
+              <tr>
+              <tr>
+                <td>b_weight</td>
+                <td>0.111</td>
+              <tr>
+              <tr>
+                <td>r_intensity</td>
+                <td>12</td>
+              <tr>
+              <tr>
+                <td>g_intensity</td>
+                <td>2</td>
+              <tr>
+              <tr>
+                <td>b_intensity</td>
+                <td>0</td>
+              <tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/download3.png" alt="Compas">
+            <table class="table">
+              <tr>
+                <td>r_weight</td>
+                <td>0.361</td>
+              <tr>
+              <tr>
+                <td>g_weight</td>
+                <td>0.238</td>
+              <tr>
+              <tr>
+                <td>b_weight</td>
+                <td>0.069</td>
+              <tr>
+              <tr>
+                <td>r_intensity</td>
+                <td>12</td>
+              <tr>
+              <tr>
+                <td>g_intensity</td>
+                <td>2</td>
+              <tr>
+              <tr>
+                <td>b_intensity</td>
+                <td>10</td>
+              <tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/download4.png" alt="Compas">
+            <table class="table">
+              <tr>
+                <td>r_weight</td>
+                <td>0.361</td>
+              <tr>
+              <tr>
+                <td>g_weight</td>
+                <td>0.238</td>
+              <tr>
+              <tr>
+                <td>b_weight</td>
+                <td>0.069</td>
+              <tr>
+              <tr>
+                <td>r_intensity</td>
+                <td>1</td>
+              <tr>
+              <tr>
+                <td>g_intensity</td>
+                <td>2</td>
+              <tr>
+              <tr>
+                <td>b_intensity</td>
+                <td>1</td>
+              <tr>
+            </table>
+          </div>
+        </div>
+      </div> <!-- /tiles -->
+      
     </div>
     <!-- /.container -->
+    
 
 
     <!-- Load JS here for greater good =============================-->
@@ -128,7 +320,9 @@
     <script src="js/flatui-radio.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
+    <script src="js/prism.js"></script>
     <script src="js/jquery.tancolor.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script>
     $('input[type=range]').change(function () {
         var value = this.value;
@@ -198,7 +392,11 @@
         });
     }
     $(document).ready(function(){  
-        $("#myImage").tancolor({}); 
+        $("#myImage").tancolor({});
+        $("#grayscale").tancolor({});
+        $("#red").tancolor({mode: "red"});
+        $("#green").tancolor({mode: "green"});
+        $("#blue").tancolor({mode: "blue"});  
     });  
     </script>
   </body>
