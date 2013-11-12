@@ -1,0 +1,25 @@
+{
+  "name": "tancolor",
+  "title": "jQuery Tancolor",
+  "description": "A jQuery plugin that processes image using filter algorithm.",
+  "version": "0.1.0",
+  "homepage": "http://nicolaisi.github.io/tancolor/",
+  "author": {
+    "name": "Nicholas Tan Jerome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolaisi/tancolor.git"
+  },
+  "bugs": "https://github.com/nicolaisi/tancolor/issues",
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/nicolaisi/tancolor/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "keywords": ["image","color","filter"]
+}
