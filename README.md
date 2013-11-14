@@ -20,7 +20,7 @@ Dependencies
 ============
 
 *  [jQuery](https://github.com/jquery/jquery)
-*  [Canvas](http://caniuse.com/canvas)
+*  [Canvas](http://caniuse.com/#feat=canvas)
 
 Install
 =======
