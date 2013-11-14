@@ -273,3 +273,9 @@
   width: 140px;
   margin-left: 20px;
 }
+
+#disclaimer {
+  font-size: 12px;
+  line-height: 40px;
+  margin 20px 0;
+}
