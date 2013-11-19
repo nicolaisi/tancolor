@@ -70,7 +70,6 @@
         // convert image to canvas
         var img = document.getElementById($(this).attr("id"));
         //var img = $('#'+$(this).attr("id"));
-        console.log(this);
         var canvas = convertImageToCanvas(img);
         var ctx = canvas.getContext("2d");
         var imageData = ctx.getImageData(0, 0, img.width, img.height)
@@ -89,32 +88,25 @@
         }
         ctx.putImageData(imageData, 0, 0);
 
-        //$('#'+$(this).attr("id")).each(function(i,e){ 
-        //     var img = e.toDataURL("image/png"); 
-        //     $(e).replaceWith( $('<img src="' + img + '"/>').attr({width: $(e).attr("width"), height: $(e).attr("height"), style: $(e).attr("style"), id: $(e).attr("id") }) ) });
+        $('#'+$(this).attr("id")).each(function(i,e){ 
+             var img = e.toDataURL("image/jpg"); 
+             $(e).replaceWith( $('<img src="' + img + '"/>').attr({width: $(e).attr("width"), height: $(e).attr("height"), style: $(e).attr("style"), id: $(e).attr("id") }) ) });
 
         // Converts image to canvas; returns new canvas element
         function convertImageToCanvas(image) {
-	    var canvas = document.createElement("canvas");
-        image.src = "images/obama.jpg";
-	    canvas.width = image.width;
-	    canvas.height = image.height;
+	        var canvas = document.createElement("canvas");
+            image.src = "images/obama.jpg";
+	        canvas.width = image.width;
+	        canvas.height = image.height;
             if(image.id) {
                 canvas.id = image.id;
             }
             if(image.className) {
                 canvas.className = image.className;
             }
-	    canvas.getContext("2d").drawImage(image, 0, 0);
-
-	    return canvas;
-        }
-
-        // Converts canvas to an image
-        function convertCanvasToImage(canvas) {
-	    var image = new Image();
-	    image.src = canvas.toDataURL("image/png");
-	    return image;
+	        canvas.getContext("2d").drawImage(image, 0, 0);
+	        
+	        return canvas;
         }
     };
 }(jQuery));
