@@ -7,7 +7,8 @@
             b_weight: 0.16,
             r_intensity: 1,
             g_intensity: 1,
-            b_intensity: 1
+            b_intensity: 1,
+            load: null
         }, options );
 
         var r_weight;
@@ -63,6 +64,10 @@
 
         // convert image to canvas
         var img = document.getElementById($(this).attr("id"));
+        if(settings.load){
+            img.src = settings.load;
+            return;
+        }
         var canvas = convertImageToCanvas(img);
         var ctx = canvas.getContext("2d");
         var imageData = ctx.getImageData(0, 0, img.width, img.height)

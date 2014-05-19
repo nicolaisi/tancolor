@@ -2,7 +2,7 @@
   "name": "tancolor",
   "title": "jQuery Tancolor",
   "description": "A jQuery plugin that processes image using filter algorithm.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "http://nicolaisi.github.io/tancolor/",
   "author": {
     "name": "Nicholas Tan Jerome",
