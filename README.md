@@ -88,6 +88,14 @@ Of course you can change every specific parameter to suit your need, there are m
     
 The `*_weight` parameter tune the brightness of the color element. The `*_intensity` parameter determines the color of the image.
 
+You can revert to the original image by providing the source of the image.
+
+    $("#myImageID").tancolor({
+        load: 'images/obama.jpg'
+    });
+
+Look at the example folder for some code examples.
+
 Motivation
 ==========
 
